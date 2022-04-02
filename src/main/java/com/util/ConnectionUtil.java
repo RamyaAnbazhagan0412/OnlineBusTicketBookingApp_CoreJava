@@ -6,8 +6,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ConnectionUtil {
+	
 
 	public static Connection getConnection() throws ClassNotFoundException {
+		
 		//Class.forName("com.mysql.cj.jdbc.Driver");
 		String url="jdbc:mysql://101.53.133.59:3306/revature_training_db";
 		String userName="rev_user";

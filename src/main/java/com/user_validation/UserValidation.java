@@ -1,14 +1,14 @@
 package com.user_validation;
 
 
+import com.callable_class.UserRegistrationClass;
 import com.model_classes.UserRegistrationModel;
 
 public class UserValidation {
 
-	public static void userValidator(UserRegistrationModel userReg){
+	public static void userValidator(UserRegistrationModel userReg) throws Exception{
 		try {
-			if(userReg.getUserName()==null)
-			{
+			if(userReg.getUserName()==null||userReg.getUserName().isEmpty())			{
 				throw new Exception("Invalid Name");
 			}
 			else if(userReg.getEmailId()==null||userReg.getEmailId().isEmpty()||!(userReg.getEmailId().endsWith("@gmail.com")))
@@ -31,9 +31,11 @@ public class UserValidation {
 		catch(Exception e) {
             System.out.println(e.getMessage());	
             System.out.println("Login Again");
+            UserRegistrationClass.userRegistrationClass();
 
 			}
-	}
+	
+		}
 	}
 
 

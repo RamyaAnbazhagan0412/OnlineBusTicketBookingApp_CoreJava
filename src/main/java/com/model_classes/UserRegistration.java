@@ -1,6 +1,6 @@
 package com.model_classes;
 
-public class UserRegistrationModel {
+public class UserRegistration {
 	// 1. using encapsulation to make the variables private
 	private int userId;
 	private String  userName;

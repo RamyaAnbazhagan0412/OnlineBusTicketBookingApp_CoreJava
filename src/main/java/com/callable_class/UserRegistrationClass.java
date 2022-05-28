@@ -1,7 +1,7 @@
 package com.callable_class;
 import java.util.Scanner;
 
-import com.model_classes.UserRegistrationModel;
+import com.model_classes.UserRegistration;
 import com.user_registration_dao.UserRegistrationDAO;
 import com.user_validation.UserValidation;
 
@@ -9,7 +9,7 @@ public class UserRegistrationClass {
 public static void userRegistrationClass()throws Exception {
 			//1.creating object for user registration class
 			
-			UserRegistrationModel userRegistration=new UserRegistrationModel();
+			UserRegistration userRegistration=new UserRegistration();
 			Scanner sc= new Scanner(System.in);
 			
 			//2.getting input from user using Scanner  class

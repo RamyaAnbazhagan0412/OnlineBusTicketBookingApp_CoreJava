@@ -1,11 +1,10 @@
 package com.model_classes;
 
-public class DisplayBusModel {
+public class Bus {
 	private int   busId;
 	private String busName;
 	private String busFrom;
 	private String busTo;
-	private String busDate;
 	private String busTiming;
 	private int  busTicketsAvailable;
 	private int  busTicketPrice;
@@ -35,12 +34,7 @@ public int getBusId() {
 	public void setBusTo(String busTo) {
 		this.busTo = busTo;
 	}
-	public String getBusDate() {
-		return busDate;
-	}
-	public void setBusDate(String busDate) {
-		this.busDate = busDate;
-	}
+	
 	public String getBusTiming() {
 		return busTiming;
 	}
@@ -62,7 +56,7 @@ public int getBusId() {
 
 	@Override
 	public String toString() {
-		return '\n'+ busId + "    " + busName + "    " + busFrom + "    " + busTo +"    "+ busDate+"     "+ busTicketsAvailable + "    " + busTicketPrice ;
+		return "["+ busId + "    " + busName + "    " + busFrom + "    " + busTo +"    "+ busTiming+"     "+ busTicketsAvailable + "    " + busTicketPrice ;
 	
 	}
 	

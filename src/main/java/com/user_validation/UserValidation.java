@@ -2,11 +2,11 @@ package com.user_validation;
 
 
 import com.callable_class.UserRegistrationClass;
-import com.model_classes.UserRegistrationModel;
+import com.model_classes.UserRegistration;
 
 public class UserValidation {
 
-	public static void userValidator(UserRegistrationModel userReg) throws Exception{
+	public static void userValidator(UserRegistration userReg) throws Exception{
 		try {
 			if(userReg.getUserName()==null||userReg.getUserName().isEmpty())			{
 				throw new Exception("Invalid Name");
